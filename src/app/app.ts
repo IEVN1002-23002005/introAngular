@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-
+ 
 @Component({
   selector: 'app-root',
   standalone: false,
@@ -7,5 +7,15 @@ import { Component, signal } from '@angular/core';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('introAngular');
+  titulo:string = "Eduardo Zavala Padilla"
+  duplicaNumero(num:number):number{
+    return num*2
+  }
+  pelicula={
+    titulo:"El Padrino",
+    anio: 1972,
+    genero: "Crimen/Drama",
+    fechaLanzamiento: new Date(),
+    precio: 345
+  }
 }
